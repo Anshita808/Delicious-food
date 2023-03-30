@@ -5,6 +5,10 @@ const productSchema = mongoose.Schema({
         type:String,
         require:true
     },
+    button:{
+        type:String,
+        require:true
+    },
     title:{
         type:String,
         require:true
