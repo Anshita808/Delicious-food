@@ -1,5 +1,26 @@
 
 let mainSection = document.getElementById("main");
+let viewbtn = document.getElementById("view-iftar");
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.prev-btn')];
+
+
+        productContainers.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            nxtBtn[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            })
+
+            preBtn[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            })
+        })
+
+
 
 
 function renderCardList(cardData) {
@@ -38,14 +59,12 @@ function getCard(image, title, grams, price, time) {
         <button class="btn">+</button>
         <h3>${title}</h3>
         <p>${grams}</p>
-        <h4>${price}</h4>
+        <h4 class="price">${price}</h4>
         <p>${time}</p>
       </div>`
         ;
     return card;
 }
-
-
 
 
 
@@ -65,4 +84,7 @@ function display() {
 }
 display()
 renderCardList()
+
+
+
 
