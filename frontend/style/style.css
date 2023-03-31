@@ -9,6 +9,11 @@
 .nav-container{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed; 
+    top: 0px;
+    z-index: 2;
+    background-color: white; 
+   
 }
 .navbar{
     /* border: 2px solid green; */
@@ -79,8 +84,9 @@ left: 55%;
 }
 /* mid */
 .mid{
-    width: 90%;
+    width: 87%;
     margin: auto;
+    margin-top: 110px;
 }
 .mid>div{
   margin-top: 30px;
@@ -88,6 +94,7 @@ left: 55%;
 .mid>div>h2{
     font-family: sans-serif;
     line-height: 40px;
+    font-size: 22px;
 }
 .mid>div>p{
     color: gray;
@@ -156,17 +163,19 @@ left: 55%;
     align-items: center;
     justify-content: space-between;
  }
-.he>p{
-    width: 8%;
+.he>a{
+    width: 6%;
     font-family: sans-serif;
+    text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    border: 2px solid #C2185B;
+    font-size: 12px;
+    border: 1px solid #C2185B;
     border-radius: 6px;
-    padding: 8px;
+    padding: 3px;
+    text-align: center;
     font-weight: 550;
 }
-.he>p:hover{
+.he>a:hover{
     background-color: #D50000;
  }
 
@@ -228,7 +237,7 @@ left: 55%;
   font-size: 16px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
- h4{
+ .price{
     color: #4CAF50;
     font-size: 20px;
     
@@ -241,7 +250,8 @@ left: 55%;
     font-size: 14px;
  }
  .btn{
-    position: relative;
+  position: relative;
+ 
    top: -9%;
    left: 91%;
    padding: 5px 14px 5px 14px ;
@@ -317,3 +327,189 @@ left: 55%;
     margin: 20px 0px 25px 80px;
     font-family: sans-serif;
  }
+ .lower{
+    width: 20%;
+    margin: 20px 0px 25px 80px;
+    font-family: sans-serif;
+ }
+ 
+ .footer{
+    width: 100%;
+    background-color: #fdf3f6;
+   
+ }
+ .footer-text{
+    width: 92%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .footer-text>div{
+    width: 35%;
+    padding: 20px;
+ }
+ .footer-text>div>h4{
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 14px;
+ }
+ .footer-text>div>p{
+    font-size: 14px;
+    color: #607D8B;
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .line{
+    margin-bottom: 14px;
+    height: 4px;
+    width: 40px;
+    background-color: #d11243;
+    border-radius: 2px;
+ }
+ .bottom-footer{
+    width: 90%;
+    display: flex;
+    margin: auto;
+ }
+ .bottom-footer>div:nth-child(1){
+    width: 11%;
+ }
+ .bottom-footer>div>img{
+    width: 100%;
+ }
+ .gray{
+    width: 80%;
+    margin-top: 28px;
+ }
+
+ .gray-line{
+    margin-bottom: 14px;
+    height: 1px;
+    width: 100%;
+    background-color: #CFD8DC;
+    border-radius: 2px;
+ }
+ .bot-social{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+ }
+ .bot-social>div:nth-child(1){
+    width: 30%;
+ }
+ .bot-social>div>h3,img,p{
+    margin-top: 10px;
+    line-height: 30px;
+ }
+ .bot-social>div:nth-child(4)>img{
+   margin: 20px 0px 20px 0px;
+   width: 55%;
+ }
+
+ .cities{
+    width: 100%;
+    background-color: #FAFAFA;
+   height: 250px;
+ }
+ .cities>div:nth-child(1){
+    width: 90%;
+    margin-left: 40px;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+ }
+ .cities>div>h3{
+    font-weight: 550;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+ }
+ .city-name{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 15px;
+
+ }
+.city-name>div{
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.city-name>div>p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.pop{
+  margin: 70px 0px 30px 70px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.popular{
+   width: 90%;
+   margin: auto;
+}
+.popular>div{
+   width: 100%;
+   margin-bottom: 20px;
+}
+.popular>div>p{
+   font-size: 14px;
+   line-height: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*  */
+.productHeader{
+   width: 87%;
+    margin: auto;
+    color: #708AA5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 17px;
+   }
+   .product {
+       width: 87%;
+       margin: auto;
+       position: relative;
+       overflow: hidden;
+       }
+     .product-container {
+       display: flex;
+       overflow-x: auto;
+       scroll-behavior: smooth;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       box-sizing: border-box;
+     }
+     .product-container::-webkit-scrollbar {
+       display: none;
+     }
+     .product-card{
+       width: 520px;
+       height: 235px;
+       cursor: pointer;
+       margin-right: 20px;
+      }
+      .product-card img{
+      width: 429px;
+       height: 150px;
+      }
+     .pre-btn {
+       left: 0;
+       transform: rotate(180deg);
+     }
+     .nxt-btn {
+       right: 0;
+     }
+     .product>i{
+      border: 2px solid red;
+      
+     }
