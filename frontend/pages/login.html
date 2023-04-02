@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fitness</title>
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        .nav-container {
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   position: fixed;
+   top: 0px;
+   z-index: 2;
+   background-color: white;
+   
+}
+.navbar {
+   /* border: 2px solid green; */
+   width: 90%;
+   margin: auto;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navright {
+   width: 100%;
+   padding: 10px;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+
+.navright div:nth-child(3) {
+   display: flex;
+}
+
+.navright div:nth-child(4) {
+   display: flex;
+}
+
+.navright div:nth-child(5) {
+   display: flex;
+}
+
+.nav {
+   width: 15%;
+}
+
+.nav>img {
+   width: 100%;
+}
+
+.navright div>p {
+   margin-left: 10px;
+}
+
+.navright div>span {
+   margin-left: 7px;
+}
+
+.navright div:nth-child(2) {
+   width: 30%;
+   /* border: 2px solid red; */
+}
+
+#search {
+   width: 100%;
+   padding: 10px;
+   border-radius: 5px;
+   outline: none;
+   text-decoration: none;
+   border: 0.8px solid #CFD8DC;
+   font-size: 16px;
+   background-color: #ECEFF1;
+}
+
+.fa-magnifying-glass {
+   position: absolute;
+   top: 35px;
+   left: 55%;
+  
+}
+
+#cat {
+   margin-left: 110px;
+}
+
+#loc {
+   margin-right: 65px;
+}
+
+
+
+
+        .signUp {
+            width: 100%;
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        .form {
+            width: 380px;
+            height: 460px;
+            position: relative;
+            margin: 2% auto;
+            background-color: #F5F5F5;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .btn-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            border-radius: 30px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+
+        #bot {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .social_icons {
+           width: 60%;
+           margin-left: 130px;
+        }
+        .social_icons>i{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .social_icons>i:nth-child(1) {
+            color: #1565C0;
+        }
+
+        .social_icons>i:nth-child(2) {
+            color: #03A9F4;
+        }
+
+        .social_icons>i:nth-child(3) {
+            color: #0288D1;
+        }
+  
+
+        .input {
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            margin-bottom: 15px;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient(to right, #64B5F6, #00BCD4);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .check-box {
+            margin: 10px 30px 10px 30px 0;
+            padding: 20px;
+        }
+
+        span {
+            color: #777;
+            font-size: 12px;
+            bottom: 68px;
+            padding: 3%;
+        }
+
+        #login {
+            left: 50px;
+        }
+
+        #register {
+            left: 450px;
+        }
+        #Display-msg{
+            text-align: center;
+            margin: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            display: none;
+        }
+        #botText{
+            text-align: center;
+            display: none;
+            font-weight: 600;
+        }
+        .main_page{
+            width: 100%;
+            display: flex;
+        }
+        .signUp{
+            width: 60%;
+        }
+        #ad_btn{
+           width: 10%;
+           border-radius: 3px;
+           padding: 8px;
+           border: none;
+           font-size: 13px;
+           cursor: pointer;
+           margin-left: 870px;
+           font-weight: 550;
+           font-family: sans-serif;
+        }
+        #ad_btn:hover{
+          color: #C62828;
+          background-color: #E0E0E0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="navbar">
+        <div class="nav">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTud3IH5brAFdLoimsaApvFD5Wu_Hy1pVGZ9Q&usqp=CAU" alt="image">
+        </div>
+            <div class="navright">
+                    <div id="loc">
+                        <img src="https://www.licious.in/image/rebranding/svg/location-pin.svg" alt="">
+                        <span style="font-weight: 560;">NCR</span>
+                        <div>
+                            Delhi,India
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search for any delicious product" id="search">
+                     
+                        <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i>
+                 
+                    </div>
+                
+                    <div id="cat">
+                        <img src="https://www.licious.in/image/rebranding/svg/categories-grey.svg" alt="">
+                        <p>Categories</p>
+                       
+                    </div>
+    
+                    <div>
+                        <img src="https://www.licious.in/image/rebranding/svg/profile-grey.svg" alt="logo">
+                       <p>Login</p>
+                    <div class="loginContainer">
+                      <form action="">
+    
+                      </form>
+                    </div>
+                       
+                    </div>
+    
+                    <div>
+                        <img src="https://www.licious.in/image/rebranding/svg/cart.svg" alt="">
+                        <p>Cart</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ======================================================= -->
+    <!-- login page -->
+    <div class="signUp">
+        <div class="form">
+            <div class="btn-box">
+                <div id="bot"></div>
+                <button type="button" class="btn" onclick="login()">Log In</button>
+                <button type="button" class="btn" onclick="register()">Register</button>
+            </div>
+            <div class="social_icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <form id="login" class="input">
+                <div>
+                    <p id="Display-msg"></p>
+                </div>
+                <input id="userId" type="email" class="input-field" placeholder="User Id" required>
+                <input id="userPassword" type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button id="login-btn" type="submit" class="submit-btn">Log in</button>
+               
+            </form>
+            <form id="register" class="input">
+                <div>
+                    <p id="botText">Account Created</p>
+                </div>
+                <input id="name" type="text" class="input-field" placeholder="User Id" required>
+                <input id="email" type="email" class="input-field" placeholder="Email Id" required>
+                <input id="password" type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+
+               
+            </form>
+
+            
+        </div>
+           
+    </div>
+         
+    </div>
+
+</body>
+<script>
+   
+
+    function register() {
+        loginEl.style.left = "-400px"
+        registerEl.style.left = "50px"
+        buttonEl.style.left = "110px"
+    }
+    function login() {
+        loginEl.style.left = "50px"
+        registerEl.style.left = "450px"
+        buttonEl.style.left = "0px"
+    }
+    let loginEl = document.getElementById("login");//form
+    let registerEl = document.getElementById("register");
+    let buttonEl = document.getElementById("bot");
+    //    LS part
+    let UserName = document.getElementById("name");
+    let UserEmail = document.getElementById("email");
+    let UserPassword = document.getElementById("password");
+    let submitEl = document.querySelector(".submit-btn");
+    let bottom_text = document.getElementById("botText")
+
+    registerEl.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+            let myData = JSON.parse(localStorage.getItem("account-data"))||[];
+            let formData = {
+                name: UserName.value,
+                email: UserEmail.value,
+                password: UserPassword.value,
+            };
+            myData.push(formData)
+          
+            localStorage.setItem("account-data", JSON.stringify(myData));
+          
+            ResetData();
+        });
+        // console.log("hi")
+   
+// login part
+
+     let user_id = document.getElementById("userId");
+     let user_pass = document.getElementById("userPassword");
+     let login_btn = document.getElementById("login-btn");
+     let display_msg = document.getElementById("Display-msg")
+     loginEl.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        
+     })
+     let loginData = JSON.parse(localStorage.getItem("account-data"))||[];
+
+     let flag = 0;
+     let cart_btn = document.getElementById("cart");
+     cart_btn.addEventListener("click",()=>{
+        if(flag==1){
+            window.location.href = "./cart.html"
+        }else{
+            alert("Login First")
+        }
+       
+     })
+
+     function display(data){
+        login_btn.addEventListener("click",()=>{
+            flag=1
+            data.forEach((element,index)=>{
+        if(element.email ===user_id.value && element.password === user_pass.value){
+           display_msg.style.display="block";
+           display_msg.innerText="Login Successful";
+           display_msg.style.color="green";
+          
+           setTimeout(() => {
+        window.location.assign("index.html")
+      }, 2000);
+
+        }else{
+            display_msg.style.display="block";
+            display_msg.innerText="Wrong Credential"
+            display_msg.style.color="red";
+        }
+      
+       })
+      display(loginData);
+        })
+     }
+     display(loginData)
+
+     function ResetData(){
+        UserName.value = ""
+        UserEmail.value = ""
+        UserPassword.value= ""
+        bottom_text.style.display="block"
+        bottom_text.style.color="green";
+     }
+</script>

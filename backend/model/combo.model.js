@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const comboSchema = mongoose.Schema({
+    // _id:{
+    //  type:String,
+    //  require:true,
+    // },
     image:{
         type:String,
         require:true
